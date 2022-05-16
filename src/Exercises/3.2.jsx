@@ -1,6 +1,10 @@
 import Quiz from "./3.2 comp/Quiz";
 function Exercises() {
-  return <Quiz />;
+  return (
+    <div>
+      <Quiz />
+    </div>
+  );
 }
 
 export default Exercises;
