@@ -1,0 +1,23 @@
+.box1 {
+  width: 300px;
+  height: 300px;
+  transition: all 0.4s ease-in-out;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.aqua {
+  background-color: aqua;
+}
+.black {
+  background-color: black;
+}
+.purple {
+  background-color: purple;
+}
+.circle {
+  border-radius: 50%;
+}
