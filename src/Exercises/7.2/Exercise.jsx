@@ -1,5 +1,5 @@
 import React from "react";
-import "./7.2 comp/7.2.css";
+import "./style.css";
 
 class Exercises extends React.Component {
   constructor() {

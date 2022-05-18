@@ -1,4 +1,4 @@
-import Quiz from "./3.2 comp/Quiz";
+import Quiz from "./Quiz";
 function Exercises() {
   return (
     <div>

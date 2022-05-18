@@ -1,5 +1,5 @@
 import React from "react";
-import "./9.1 comp/9.1.css";
+import "./style.css";
 
 class Exercises extends React.Component {
   state = { loading: true };

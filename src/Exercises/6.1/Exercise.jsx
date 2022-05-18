@@ -1,4 +1,4 @@
-import Card from "./4.2 comp/card";
+import Card from "../4.2/card";
 
 function Exercises() {
   return (

@@ -1,4 +1,4 @@
-import Btn from "./4.1 comp/button";
+import Btn from "./button";
 function Exercises() {
   return (
     <div>

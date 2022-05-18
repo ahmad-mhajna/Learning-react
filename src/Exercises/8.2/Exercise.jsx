@@ -1,5 +1,5 @@
 import React from "react";
-import "./8.2 comp/8.2.css";
+import "./style.css";
 
 class Exercises extends React.Component {
   state = { class: "none" };

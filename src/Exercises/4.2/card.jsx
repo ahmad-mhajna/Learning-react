@@ -1,5 +1,5 @@
 import React from "react";
-import "./4.2.css";
+import "./style.css";
 // function Card(obj) {
 //   return (
 //     <div className="card">
