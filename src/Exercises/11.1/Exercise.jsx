@@ -2,8 +2,8 @@ import React from "react";
 import Button from "./CustomButton";
 class Exercise extends React.Component {
   state = { selectedColor: "" };
-  onButtonClick = (e) => {
-    this.setState({ selectedColor: e.target.style.backgroundColor });
+  onButtonClick = (event) => {
+    this.setState({ selectedColor: event.target.style.backgroundColor });
   };
   colors = ["blue", "red", "yellow"];
   render() {
