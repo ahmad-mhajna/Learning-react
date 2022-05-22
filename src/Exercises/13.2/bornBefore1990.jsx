@@ -11,11 +11,12 @@ class BornBefore1990 extends React.Component {
               <p>name: {person.name}</p>
               <p>birthday: {person.birthday}</p>
 
-              <p>
-                favoritefoods: <br /> {person.favoriteFoods.meats[0]} <br />
-                {person.favoriteFoods.meats[1]} <br />
-                {person.favoriteFoods.fish}
-              </p>
+              <ul>
+                favoritefoods:
+                <li>{person.favoriteFoods.meats[0]}</li>
+                <li>{person.favoriteFoods.meats[1]}</li>
+                <li>{person.favoriteFoods.fish}</li>
+              </ul>
             </div>
           );
         })}
