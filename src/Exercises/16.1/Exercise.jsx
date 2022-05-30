@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Header from "./Header";
-import HomePage from "./HomePage";
-import Products from "./ProductsPage";
+import Header from "./header";
+import HomePage from "./homePage";
 import Product from "./Product";
+import ProductsPage from "./ProductsPage";
 class Exercise extends React.Component {
   products = [
     {
@@ -38,8 +38,12 @@ class Exercise extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Header />
-        <Route path="/" exact component={HomePage} />
+        <Route path="/">
+          <Header />
+        </Route>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
         <Route path="/products" exact>
           <ProductsPage products={this.products} />;
         </Route>
