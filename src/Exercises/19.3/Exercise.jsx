@@ -9,14 +9,18 @@ function Exercise() {
   useEffect(() => {
     const getData = async () => {
       spinnerRef.current.classList.remove("hidden");
-      const data = await axios.get(
-        `https://hn.algolia.com/api/v1/search?query=${searchQuery}`
-      );
-      let results = data.data.hits.map((resultInfo) => {
-        let result = { name: resultInfo.title, url: resultInfo.url };
-        return result;
-      });
-      addResults(await results);
+      try {
+        const data = await axios.get(
+          `https://hn.algolia.com/api/v1/search?query=${searchQuery}`
+        );
+        let results = data.data.hits.map((resultInfo) => {
+          let result = { name: resultInfo.title, url: resultInfo.url };
+          return result;
+        });
+        addResults(await results);
+      } catch (error) {
+        console.error(error);
+      }
       spinnerRef.current.classList.add("hidden");
     };
     getData();
