@@ -1,6 +1,6 @@
 import "./App.css";
 // Change from ./Exercises/number to get the Exercises you want to test
-import Exercises from "./Exercises/19.3/Exercise";
+import Exercises from "./Exercises/20.1/Exercise";
 function App() {
   return (
     <div>
